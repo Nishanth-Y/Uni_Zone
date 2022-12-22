@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "uni_zone",
+            "database": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\nishanth\\PBL\\Uni_Zone\\db.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
