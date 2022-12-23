@@ -97,8 +97,6 @@ def register(request):
     else:
         return render(request, "uni-zone/register.html")
 
-
-
 def profile(request, username):
     user = Club.objects.get(username=username)
     all_posts = Post.objects.filter(creater=user).order_by('-date_created')
