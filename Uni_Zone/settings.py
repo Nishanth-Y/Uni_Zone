@@ -38,14 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'MainApp',
-    "push_notifications",
 ]
-
-PUSH_NOTIFICATIONS_SETTINGS = {
-        "FCM_API_KEY": "455590434688",
-        "GCM_API_KEY": "[your api key]",
-        "APNS_CERTIFICATE": "/path/to/your/certificate.pem",
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
