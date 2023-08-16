@@ -1,0 +1,5 @@
+newenv
+db.sqlite3
+MainApp/__pycache__/
+MainApp/migrations/__pycache__/
+Uni_Zone/__pycache__/
