@@ -10,6 +10,10 @@
     {
       "src": "/(.*)",
       "dest": "Uni_Zone/wsgi.py"
+    },
+    {
+      "src": "/MainApp/media/(.*)",
+      "dest": "/static/$1"
     }
   ]
 }
