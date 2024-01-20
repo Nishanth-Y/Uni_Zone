@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "Uni_Zone/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "20mb", "runtime": "python3.9" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Uni_Zone/wsgi.py"
+    }
+  ]
+}

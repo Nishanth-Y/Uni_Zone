@@ -25,7 +25,7 @@ SECRET_KEY = 'v7n!pf!6(n-youe=98q6q$8&6c=5==8(_$0q4ytb1o9b@^$e=4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 AUTH_USER_MODEL = 'MainApp.Club'
 
 # Application definition
