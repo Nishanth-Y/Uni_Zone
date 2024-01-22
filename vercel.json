@@ -3,17 +3,16 @@
     {
       "src": "Uni_Zone/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "20mb", "runtime": "python3.9" }
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "Uni_Zone/wsgi.py"
-    },
-    {
-      "src": "/MainApp/media/(.*)",
-      "dest": "/static/$1"
     }
   ]
 }

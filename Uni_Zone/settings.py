@@ -25,7 +25,7 @@ SECRET_KEY = 'v7n!pf!6(n-youe=98q6q$8&6c=5==8(_$0q4ytb1o9b@^$e=4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 AUTH_USER_MODEL = 'MainApp.Club'
 
 # Application definition
@@ -74,13 +74,23 @@ WSGI_APPLICATION = 'Uni_Zone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     },
+    
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'uni_zone_db',
+        'USER' : 'nishu',
+        'PASSWORD' : 'prni',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
     }
 }
-
 AUTH_USER_MODEL = "MainApp.Club"
 
 # Password validation
@@ -115,9 +125,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'MainApp/media')
